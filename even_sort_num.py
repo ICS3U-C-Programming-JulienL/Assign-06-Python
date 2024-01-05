@@ -10,6 +10,7 @@ def sort_element_list(list_one, list_two):
     sorted_list = list_one + list_two
 
     # use a nested for loop to run through each combination of numbers in the list
+    # source : https://www.geeksforgeeks.org/sort-a-list-in-python-without-sort-function/
     for counter_one in range(0, len(sorted_list)):
         for counter_two in range(counter_one + 1, len(sorted_list)):
             # if sorted_list[counter_one] >= sorted_list[counter_two] the make  sorted_list [counter_one] =  sorted_list [counter_two] and  sorted_list [counter_two] =  sorted_list [counter_one]
